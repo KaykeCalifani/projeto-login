@@ -11,32 +11,29 @@
     --lilas: #5f2c82;
 }
 
-html{
+html, body{
+    background-color: var(--lilas);
+    width: 100vw;
     height: 100vh;
-}
-
-body{
-    background-color: lightgray;
 }
 
 main{
+    position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--lilas);
 }
 
-section{
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
-    height: 530px;
+    height: 510px;
     border-radius: 20px;
     transition: width .3s, height .3s;
-    position: absolute;
+    transition-timing-function: ease;
     overflow: hidden;
 }
 
@@ -48,9 +45,8 @@ section > div#imagem{
 }
 
 #formulario{
-    width: 230px;
-    height: 293px;
     padding: 10px;
+    display: block;
 }
 
 div#formulario > h1{
